@@ -9,10 +9,11 @@ header{
     width: 100%;
 }
 header nav{
-    background: rgb(222,1,8);
+    background: darkcyan;
     width: 100%;
     margin: 0 auto;
     z-index: 10;
+    font-family: sans-serif;
 }
 .titulo{
     position: absolute;
@@ -34,9 +35,8 @@ header nav ul li{
     position: relative;
 }
 header nav ul li:hover {
-    background: rgb(191,0,0);
+    background: darkcyan;
     transition: .3s;
-
 }
 header nav ul li a{
     text-decoration: none;
@@ -49,7 +49,7 @@ header nav ul li .children{
     text-align: left;
     position: absolute;
     z-index: 20;
-    background:  rgb(222,1,8);
+    background: darkcyan;
 }
 header nav ul li:hover .children{
     display: block;
@@ -57,6 +57,7 @@ header nav ul li:hover .children{
 .main-content{
     font-size: 1.5rem;
     text-align: justify;
+    padding: 40px;
 }
 @media screen and (max-width:830px){
     header nav{
