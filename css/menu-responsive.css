@@ -64,7 +64,8 @@ header nav ul li:hover .children{
         position: fixed;
         left: 0;
         width: 80%;
-        height: calc(100%-80px);
+        padding-top: 50px;
+        height: calc(100%-60px);
         background: darkcyan;
     }
     header nav ul li{
@@ -72,6 +73,6 @@ header nav ul li:hover .children{
     }
     header nav ul li a{
         display: block;
-        color: black;
+        color: white; 
     }
 }
