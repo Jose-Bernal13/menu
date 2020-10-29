@@ -3,17 +3,10 @@
     margin: 0;
 }
 body{
-    background: #ffffff;
+    background: #fefefe;
 }
-header{
-    width: 100%;
-}
-header nav{
-    background: darkcyan;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 10;
-    font-family: sans-serif;
+.menu-bar{
+    display: none;
 }
 .titulo{
     position: absolute;
@@ -25,57 +18,142 @@ h1{
     display: block;
     color: white;
 }
+header{
+    width: 100%;
+}
+header nav{
+    background: darkcyan;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
 header nav ul{
     list-style: none;
     text-align: right;
 }
 header nav ul li{
     display: inline-block;
-    transition: .3s;
     position: relative;
 }
-header nav ul li:hover {
-    background: darkcyan;
-    transition: .3s;
-}
 header nav ul li a{
-    text-decoration: none;
     color: white;
     display: block;
+    text-decoration: none;
     padding: 20px;
 }
+header nav ul li span{
+    margin-right: 10px;
+}
+/* header nav ul li:hover {
+    background: rgb(191,0,0);
+    transition: .3s;
+
+} */
 header nav ul li .children{
     display: none;
-    text-align: left;
+    width: 150%;
+    background: black;
     position: absolute;
-    z-index: 20;
-    background: darkcyan;
+    text-align: left;
 }
-header nav ul li:hover .children{
+/* header nav ul li:hover .children{
     display: block;
+    width: 100%;
+    text-align: left;
+    z-index: 20;  
+} */
+/* header nav ul li:hover .children li{
+    width: 100%;
+} */
+header nav ul li .children li{
+    display: block;
+    border: 1px solid black;
 }
-.fas {
-	padding-right: 10px;
+header nav ul li .children li a{
+    display: block;
+    background: black;
 }
 .main-content{
+    padding: 2rem;
     font-size: 1.5rem;
     text-align: justify;
-    padding: 40px;
 }
-@media screen and (max-width:830px){
-    header nav{
+@media screen and (max-width:768px){
+    body{
+        padding-top: 69px;
+    }
+    .titulo{
+        display: none;
+    }
+
+    .icon-list{
+        width: 50px;
+        height: 50px;
+        background: black;
+    }
+    .menu-bar{
+        display: block;
+        width: 100%;
         position: fixed;
-        left: 0;
-        width: 80%;
-        padding-top: 50px;
-        height: calc(100%-60px);
+        top: 0;
         background: darkcyan;
+    }
+    .menu-bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+    .menu-bar span{
+        float: right;
+        font-size: 38px;
+    }
+    header nav{
+        width: 100%;
+        /* width: 80%; */
+        position: fixed;
+        right: 0;
+        height: calc(100%-80px);
+        background: darkcyan;
+        margin: 0;
     }
     header nav ul li{
         display: block;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    header nav ul li:hover{
+        background: white;
     }
     header nav ul li a{
         display: block;
-        color: white; 
+        color: black;
+        text-align: left;
+        color: white;
+    }
+    header nav ul li a:hover{
+        color: black;
+
+    }
+    header nav ul li .children{
+        width: 100%;
+        background: white;
+        color: white;
+        position: relative;
+    }
+    header nav ul li .children a{
+        padding-left: 20px;
+    }
+    
+    header nav ul li .icon-chevron-small-down{
+        float: right;
+        top: 3px;
+        margin-left: 1px;
+        margin-right: 0;
+    }
+    .main-content{
+        margin: 2em;
+        text-align: justify;
     }
 }
