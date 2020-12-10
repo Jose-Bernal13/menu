@@ -7,8 +7,7 @@ h1{
 }
 .imgs{
     width: 90%;
-    margin-left: 400px;
-    margin-top: 30px;
+    margin: 0 auto;
 }
 img{
     width: 300px;
@@ -35,5 +34,4 @@ h2{
 }
 .alineacion-lista{
     float: right;
-    padding-right: 5px;
 }

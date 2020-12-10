@@ -16,6 +16,6 @@ function main(){
         }
     });
 $('.subMenu').click(function(){
-$(this).children('.children').slideToggle();
-})
+	$(this).children('.children').slideToggle();
+});
 }
